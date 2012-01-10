@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evaluering</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p>
+
+    <%= link_to("[ Ansatte ]", people_url) %>
+    <%= link_to("[ HSCO gruppen ]", companies_url) %>
+    <%= link_to("[ Kunder ]", customercompanies_url) %>
+    <%= link_to("[ Kundepersoner ]", customers_url) %>
+</p>
+
+<%= yield %>
+
+</body>
+</html>
